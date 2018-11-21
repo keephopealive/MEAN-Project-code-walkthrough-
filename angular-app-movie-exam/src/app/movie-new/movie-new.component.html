@@ -1,0 +1,8 @@
+<h3>Create a Movie</h3>
+<form (submit)="createMovie(formData)" #formData="ngForm" >
+  <input type="text" name="title" placeholder="title" ngModel >
+  <input type="text" name="name" placeholder="name" ngModel >
+  <input type="number" name="star" placeholder="star" ngModel >
+  <input type="text" name="review" placeholder="review" ngModel >
+  <input type="submit" value="Create Movie & Rating">
+</form>

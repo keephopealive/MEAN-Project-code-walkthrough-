@@ -1,0 +1,12 @@
+<h3>Movies</h3>
+<button [routerLink]="['/movies', 'new']" >Add a new movie</button>
+<!-- <button [routerLink]="['new']" >Add a new movie</button> -->
+
+<ul>
+  <li *ngFor="let movie of movies">
+    <span>{{movie.title}} - </span>
+    <button [routerLink]="['/movies', movie._id ]" >Read Reviews</button> 
+    <span> - </span>
+    <button [routerLink]="['/movies', movie._id, 'rating' ]">Write Review</button>
+  </li>
+</ul>

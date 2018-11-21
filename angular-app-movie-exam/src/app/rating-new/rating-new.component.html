@@ -1,0 +1,7 @@
+<h3>Add a Rating</h3>
+<form (submit)="createRating(formData)"  #formData="ngForm">
+  <input type="text" name="name" placeholder="name" ngModel />
+  <input type="text" name="star" placeholder="star" ngModel />
+  <input type="text" name="review" placeholder="review" ngModel />
+  <input type="submit" value="Create Rating" />
+</form>
